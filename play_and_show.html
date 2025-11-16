@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Start a War – هدیه برای تو</title>
+  <style>
+    body { font-family: "Segoe UI","Tahoma","Arial",sans-serif; padding:20px; background:#f7f7f7; color:#111; text-align:center; }
+    .card { max-width:900px; margin:18px auto; background:#fff; padding:18px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.06); }
+    h1{margin:0 0 12px}
+    audio{width:100%; margin-top:8px}
+    .translation{margin-top:14px; font-size:1.05rem; line-height:1.6; background:#fcfcfc; padding:12px; border-radius:8px; border:1px solid #eee; text-align:right}
+    .media { margin-top:16px; display:none; }
+    img, video { max-width:100%; border-radius:10px; margin-top:15px; box-shadow:0 6px 16px rgba(0,0,0,0.08); }
+    .btn { display:inline-block; margin-top:12px; padding:10px 16px; border-radius:8px; background:#0b69ff; color:white; text-decoration:none; cursor:pointer; }
+    .note{color:#666; font-size:0.9rem; margin-top:10px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Start a War – برای تو 🎧</h1>
+
+    <audio id="player" controls preload="auto">
+      <source src="REPLACE_WITH_AUDIO_URL" type="audio/mpeg">
+      مرورگر شما از پخش صدا پشتیبانی نمی‌کند.
+    </audio>
+
+    <div class="translation">
+      <strong>خلاصهٔ معنایی آهنگ:</strong><br><br>
+      آهنگ دربارهٔ رابطه‌ای پرتنش است که بین عشق و جنگ در رفت‌وآمد است.  
+      دو نفر با وجود آسیب‌ها هنوز نمی‌توانند از هم جدا شوند.  
+      رابطه مثل یک نبرد احساسی است: هم درد دارد و هم کشش شدید.
+    </div>
+
+    <!-- تصاویر و ویدیو -->
+    <div class="media" id="mediaBox">
+      <img src="https://github.com/hana17M/my-qr-page/blob/main/photo_2025-11-16_19-25-49.jpg" alt="عکس 1">
+      <img src="https://github.com/hana17M/my-qr-page/blob/main/photo_2025-11-16_19-25-53.jpg" alt="عکس 2">
+      <img src="https://github.com/hana17M/my-qr-page/blob/main/photo_2025-11-16_19-34-52.jpg" alt="عکس 3">
+      <video controls>
+        <source src="https://github.com/hana17M/my-qr-page/blob/main/%D9%85%D9%86%20%D8%A8%D8%B1%D8%A7%D8%AA%20%D9%85%DB%8C%D8%AC%D9%86%DA%AF%D9%85.mp4" type="video/mp4">
+        مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+      </video>
+    </div>
+
+    <div>
+      <a class="btn" id="showBtn">نمایش عکس‌ها و ویدیو + پخش آهنگ</a>
+    </div>
+
+    <div class="note">
+      اگر پخش خودکار کار نکرد، دکمه پخش را لمس کن.
+    </div>
+  </div>
+
+<script>
+  const player = document.getElementById('player');
+  const mediaBox = document.getElementById('mediaBox');
+  const btn = document.getElementById('showBtn');
+
+  btn.addEventListener('click', () => {
+    player.play().catch(()=>{});
+    mediaBox.style.display = 'block';
+    mediaBox.scrollIntoView({behavior:'smooth'});
+  });
+</script>
+
+</body>
+</html>
